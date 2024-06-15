@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Equipment Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .container {
+            background-color: grey;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+        .container h1 {
+            text-align: center;
+            color:red;
+            font-size: 3em; /* Increased header size */
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group select {
+            height: 40px;
+        }
+        .submit-btn,
+        .eq-info-btn {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .submit-btn:hover,
+        .fertilizer-info-btn:hover {
+            background-color: blue;
+        }
+        .eq-info-btn {
+            margin-top: 0;
+            margin-bottom: 20px;
+            width: auto;
+            display: inline-block;
+            float: right;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Equipment Application</h1>
+        <a href="equipment.html" class="btn">Equipment Info</a>
+        <form>
+            <div class="form-group">
+                <label for="referenceNumber">Reference Number/NIC</label>
+                <input type="text" id="referenceNumber" name="referenceNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="farmerName">Farmer Name</label>
+                <input type="text" id="farmerName" name="farmerName" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="villageOfficerDomain">Village Officer Domain</label>
+                <input type="text" id="villageOfficerDomain" name="villageOfficerDomain" required>
+            </div>
+            <div class="form-group">
+                <label for="lagamaOffice">Nearest Agricultural Services Office</label>
+                <input type="text" id="lagamaOffice" name="lagamaOffice" required>
+            </div>
+            <div class="form-group">
+                <label for="Bank">Chosen Bank</label>
+                <select id="Bank" name="Bank" required>
+                    <option value="">Select Bank</option>
+                    <option value="BOC">BOC</option>
+                    <option value="Peoples Bank">Peoples Bank</option>
+                    
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="equipment">Chosen Equipment</label>
+                <select id="equipment" name="equipment" required>
+                    <option value="">Select Equipment</option>
+                    <option value="Tractor">Tractor</option>
+                    <option value="Cultivator">Cultivator</option>
+                    <option value="Harvester">Harvester</option>
+                    <option value="Wheelbarrow">Wheelbarrow</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="How much">How much</label>
+                <input type="number" id="landSize" name="landSize" required>
+            </div>
+            <button class="fertilizer-info-btn">Bank Details</button>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
