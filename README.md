@@ -14,11 +14,6 @@ databases. It will provide a user-friendly interface for stakeholders involved i
 chain, including farmers, distributors, and government agencies.
 
 
-
-
-
-
-
 ## Features
 
 - Inventory management
@@ -32,4 +27,5 @@ chain, including farmers, distributors, and government agencies.
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@nadunthilina](https://github.com/nadunthilina)
+- [@zrashz](https://github.com/zrashz)
