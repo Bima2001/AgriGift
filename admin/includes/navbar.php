@@ -15,7 +15,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -44,6 +44,12 @@
                 </div>
             </li>
 
+            <!-- Admin profile-->
+            <li class="nav-item">
+            <a class="nav-link" href="register.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Admin profile</span></a>
+            </li>
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -144,8 +150,13 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+
+                <form action="logout.php" method="POST">
+                <button type="submit" name="logout_btn" class="btn btn-primary" >Logout</button>
+                </form>
+
                 </div>
+                 
             </div>
         </div>
     </div>

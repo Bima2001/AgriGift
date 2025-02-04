@@ -1,12 +1,11 @@
 <?php
- //session_start();
- include('security.php');
+ session_start();
  include('includes/header.php');
  include('includes/navbar.php'); 
  
  ?>
 
- 
+
 <!-- Modal -->
 <div class="modal fade" id="addadminprofile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -14,12 +13,15 @@
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Add admin data</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true"> &times;</span> 
+        <span aria-hidden="true"> &times;</span>
+            
         </button>
       </div>
 
       <form action="code.php" method="POST">
+
       <div class="modal-body">
+
 
       <div class="form-group">
         <label for="">Username</label>
@@ -43,7 +45,10 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="document.location='register.php'">Close</button>
         <button type="submit" name="registerbtn" class="btn btn-primary">Save changes</button>
       </div>
+
       </form>
+
+
     </div>
   </div>
 </div>
@@ -53,37 +58,14 @@
 <!--DataTales Example-->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="n-0 font-weight-bold text-primary">Admin profile <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">Add admin profile</button> 
+        <h6 class="n-0 font-weight-bold text-primary">Admin profile <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">Add admin profile
+        </button> 
     </h6>
     </div>
 
     <div class="card-body">
 
-    <?php
-    if(isset($_SESSION['success']) && $_SESSION['success'] !='')
-    {
-        echo '<h2 class="bg-primary text-white">'.$_SESSION['success'].'</h2>';
-        unset($_SESSION['success']);
-    }
-    
-    if(isset($_SESSION['status']) && $_SESSION['status'] !='')
-    {
-        echo '<h2 class="bg-danger text-white">'.$_SESSION['status'].'</h2>';
-        unset($_SESSION['status']);
-    }
-
-    ?>
-
         <div class="table-responsive">
-
-        <?php
-        $connection = mysqli_connect("localhost","root","","adminpanel");
-
-        $query = "SELECT * FROM register";
-        $query_run = mysqli_query($connection, $query);
-
-        ?>
-
 
         <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
             <thead>
@@ -98,12 +80,6 @@
             </thead>
             <tbody>
 
-            <?php
-        if(mysqli_num_rows($query_run) >0)
-        {
-          while($row = mysqli_fetch_assoc($query_run))
-          {
-            ?>
                 <tr>
                 <td><?php echo$row['id'];  ?></td> 
                 <td><?php echo$row['username'];  ?></td> 
@@ -117,11 +93,11 @@
                   </form>
                 </td> 
                 <td>  
-                  <form action="code.php" method="post">
-                    <input type="hidden" name="delete_id" value="<?php echo $row['id']; ?>">
-                  <button type="submit" name="delete_btn" class="btn btn-danger"> Delete</button>
-                  </form>
+                  <button type="submit" class="btn btn-danger"> Delete</button>
                 </td> 
+               
+                
+
                 </tr>
 
                 <?php
@@ -135,6 +111,7 @@
                 
             </tbody>
         </table>
+
         </div>
     </div>
 </div>
@@ -143,10 +120,9 @@
 <!--/.container fluid-->
 
 
-
 <?php
 
- include('includes/scripts.php');
- include('includes/footer.php');
- 
- ?>
+include('includes/scripts.php');
+include('includes/footer.php');
+
+?>
