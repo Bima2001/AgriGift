@@ -41,6 +41,10 @@
                                             
                                             <button type="submit" name="login_btn" class="btn btn-primary btn-user btn-block">
                                                 Login</button>
+
+                                                <div class="text-center">
+                                                <a class="small" href="..\Frontend\login.html">User login</a>
+                                                </div>
                                             <hr>
                                        </form>
                                 </div>
