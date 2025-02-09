@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+
+    <!-- top navbar -->
+    <div class="top-navbar">
+        <p>WELCOME TO OUR SHOP</p>
+        <div class="icons">
+          <a href="apply.html"><img src="./images/register.png" alt="" width="18px">Apply</a>
+            <a href="login.html"><img src="./images/register.png" alt="" width="18px">Login</a>
+            <a href="signup.html"><img src="./images/register.png" alt="" width="18px">Signup</a>
+        </div>
+    </div>
+    <!-- top navbar -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="logo"><span id="span1">Agri</span>  <span>Gift</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="./images/menu.png" alt="" width="30px"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fertilizer
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                <li><a class="dropdown-item" href="fertilizer.html">Free</a></li>
+                <li><a class="dropdown-item" href="fertilizer.html">Buy More</a></li>
+                <li><a class="dropdown-item" href="fertilizer.html">Something else here</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" id="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+      <h1 class="text-center">PRODUCTS</h1>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/1.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Tractor</h3>
+              <p class="text-center"> A powerful vehicle with large wheels used for pulling implements and trailers.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.2200000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/5.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Plow</h3>
+              <p class="text-center">A tool attached to a tractor that cuts furrows in the soil for planting seeds.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>RS.195999 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/6.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Seed Drill</h3>
+              <p class="text-center">A machine that sows seeds in rows at a specific depth and spacing.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.1575899<span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/7.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Cultivator</h3>
+              <p class="text-center">An implement with tines that loosens soil and controls weeds.
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.15750 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/8.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Harvester</h3>
+              <p class="text-center">A machine that cuts, gathers, and threshes grain crops.
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.2000000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/9.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Combine Harvester</h3>
+              <p class="text-center">A single machine that performs all the harvesting tasks of cutting, threshing, and separating grain from chaff</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.2800000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/10.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Mower</h3>
+              <p class="text-center"> A machine that cuts grass or other forage crops.
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.50000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/11.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Baler</h3>
+              <p class="text-center"> A machine that compresses cut hay or straw into bales for storage and transport.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>RS.1700000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- other cards -->
+    <div class="container" id="other-cards">
+      <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/2.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Harvester</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/p4.jpg" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Drone</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+   
+
+
+
+
+
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="content">
+        <h1> <span>Farming Gadget</span>
+          <br>
+          Up To <span id="span2">50%</span> Off
+        </h1>
+        <p>At AgriGift, we offer a diverse range of high-quality 
+          <br>Farming products to meet all your needs.
+        </p>
+        <div class="btn"><button>Shop Now</button></div>
+  
+      </div>
+      <div class="img">
+        <img src="photo/download.webp" alt="">
+      </div>
+    </section>
+    <!-- banner -->
+
+
+
+
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/12s.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Sprayer</h3>
+              <p class="text-center">A machine that applies liquid fertilizers, pesticides, or herbicides to crops.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>RS.70000<span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/13.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fertilizer Spreader</h3>
+              <p class="text-center">A machine that distributes dry fertilizer granules over a field.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.300000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/14.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Manure Spreader</h3>
+              <p class="text-center">A machine that applies manure to fields as a natural fertilizer.
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.175000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/15.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Grain Cart</h3>
+              <p class="text-center">A trailer towed behind a combine harvester to collect harvested grain.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.300000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- other cards -->
+    <div class="container" id="other">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/farm-equipment.jpg" alt="">
+            <div class="card-img-overlay">
+              <h3>Farming Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/80.jpg" alt="">
+            <div class="card-img-overlay">
+              <h3>Farming Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/0000790010_resized_agri110222.jpg" alt="">
+            <div class="card-img-overlay">
+              <h3>Electronic Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/16.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Wheelbarrow</h3>
+              <p class="text-center"> A small, hand-propelled cart with one wheel for transporting tools, materials, or crops.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.2500 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/17s.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Shovel</h3>
+              <p class="text-center">A hand tool with a broad blade for digging, moving, or loading loose materials.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>RS.750 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/18s.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Rake</h3>
+              <p class="text-center">A hand tool with a row of teeth used for gathering hay, leaves, or other debris.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.220000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/19s.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Rice Paddy Tractor</h3>
+              <p class="text-center">: A specialized tractor designed to work in wet rice paddies.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.1700000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/20s.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Round Baler</h3>
+              <p class="text-center">A machine that creates large, round bales of hay or straw.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.2025000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/21s.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Milking Machine</h3>
+              <p class="text-center"> A machine that mechanically extracts milk from cows</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.103000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/22s.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fruit Harvester</h3>
+              <p class="text-center">A machine that mechanically harvests fruits and vegetables.
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>RS.800000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="photo/22.jfif" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Drone</h3>
+              <p class="text-center">An unmanned aerial vehicle (UAV) used for various agricultural tasks, such as scouting crops, spraying pesticides, and mapping fields.
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>Rs.150000 <span><li class="fa-solid fa-cart-shopping" id="add-to-cart"></li></span></h2>
+            <div class="message" id="message">Added to cart!</div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- offer -->
+    <div class="container" id="offer">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Free service</h3>
+          <p>On order over RS.200000</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h3>Free Returns</h3>
+          <p>Within 30 days</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Fast Delivery</h3>
+          <p>World Wide</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h3>Big choice</h3>
+          <p>Of products</p>
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+
+
+
+
+
+    
+    <!-- newslater -->
+    <div class="container" id="newslater">
+      <h3 class="text-center">Subscribe To The AgriGift For Latest upload.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- newslater -->
+
+
+
+
+
+
+   
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>AgriGift</h3>
+              <p>
+                Colombo <br>
+                Kandy <br>
+                Badulla <br>
+              </p>
+              <strong>Phone:</strong> 011 2552555 <br>
+              <strong>Email:</strong> agrigift@.com <br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policey</a></li>
+             </ul>
+            </div>
+
+
+
+           
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+
+             <ul>
+              <li><a href="reg.html">Drone</a></li>
+              <li><a href="fertilizer.html">Fertilizer</a></li>
+              <li><a href="#">Gmap</a></li>
+              <li><a href="equipment.html">equipment</a></li>
+              <li><a href="#">Guidance</a></li>
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Stay connected with AgriGift across our social media platforms for the latest updates, exclusive offers, and agri news. </p>
+
+              <div class="socail-links mt-3">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AgriGift</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        // Select all elements with the class 'fa-cart-shopping'
+        var addToCartIcons = document.querySelectorAll('.fa-cart-shopping');
+    
+        // Iterate over each cart icon and attach a click event listener
+        addToCartIcons.forEach(function(icon) {
+            icon.addEventListener('click', function() {
+                // Find the closest message element within the same card
+                var message = this.closest('.card-body').querySelector('.message');
+                // Display the message
+                message.style.display = 'block';
+                // Hide the message after 2 seconds
+                setTimeout(function() {
+                    message.style.display = 'none';
+                }, 2000);
+            });
+        });
+    </script>
+    
+
+
+</body>
+</html>
