@@ -69,7 +69,7 @@
 
 /* navbar */
 #navbar{
-    background-color: navy;
+    background-color: green;
 }
 #logo{
     margin-left: 15px;
@@ -104,7 +104,7 @@
     transition: 0.5s ease;
 }
 .dropdown-menu li a:hover{
-    background-color: navy;
+    background-color: green;
     color: #ffc800;
 }
 #search input{
@@ -153,7 +153,7 @@
     text-shadow: -1px 1px 1px black;
 }
 .content h1 span{
-    color: navy;
+    color: green;
     text-shadow: 1px 1px 1px black;
 }
 #span2{
@@ -382,14 +382,14 @@
     margin-top: 20px;
 }
 .banner .content h1{
-    color: navy;
+    color: green;
     font-weight: bold;
     margin-left: 23px;
     font-size: 55px;
     text-shadow: -1px 1px 1px black;
 }
 .banner .content h1 span{
-    color: navy;
+    color: green;
     text-shadow: 1px 1px 1px black;
 }
 #span2{
@@ -405,7 +405,7 @@
     width: 150px;
     height: 32px;
     letter-spacing: 3px;
-    background-color: navy;
+    background-color: green;
     color: white;
     border-radius: 5px;
     border: none;
@@ -548,12 +548,12 @@
     padding: 0 0 30px 0px;
     color: white;
     font-size: 14px;
-    background-color:navy;
+    background-color:green;
     margin-top: 100px;
 }
 #footer .footer-top{
     padding: 60px 0 30px 0;
-    background-color: navy;
+    background-color: green;
     color: white;
 }
 #footer .footer-top .footer-contact{
